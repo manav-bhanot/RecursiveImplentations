@@ -10,7 +10,7 @@ import java.util.Scanner;
  * 
  * Given a value 'n' and 'k', In how many ways you can choose k items out of n items
  * 
- * Intutive approach =. C(n,k) = C(n-1,k) + C(n-1, k-1)
+ * Intutive approach :: C(n,k) = C(n-1,k) + C(n-1, k-1)
  */
 public class NChooseK {
 

@@ -6,12 +6,10 @@ package edu.csulb.cecs;
 /**
  * @author Manav
  * 
- * Given an input n.
- * Calculates the sum of fibonacci series upto first n terms
- * i.e. T1 + T2 + ...... + Tn
- *
+ * Input a number n
+ * Calcuates the factorial of n i.e. n!
  */
-public class Fibonacci {
+public class Factorial {
 
 	/**
 	 * @param args
