@@ -53,11 +53,13 @@ public class MergeSort {
 		int n = k - i + 1;
 		int m = j - k;
 		
+		// Create a left temp array to store the elements
 		int left[] = new int[n];
 		for (int index = 0; index < n; index++) {
 			left[index] = arr[index + i];
 		}
 		
+		// Create a right temp array to store the elements
 		int right[] = new int[m];
 		for (int index = 0; index < m; index++) {
 			right[index] = arr[index + (k + 1)];
