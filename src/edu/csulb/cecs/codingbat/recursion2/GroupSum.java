@@ -54,17 +54,15 @@ public class GroupSum {
 	private static boolean groupSum(int start, int[] nums, int target) {
 
 		if (start >= nums.length) {
-			if (target == 0) {
-				return true;
-			} else {
-				if (groupSum(start + 1, nums, target - nums[start])) {
-					return true;
-				}
-				
-				if (groupSum(start + 1, nums, target)) {
-					return true;
-				}
-			}
+			return (target == 0);
+		}
+
+		if (groupSum(start + 1, nums, target - nums[start])) {
+			return true;
+		}
+
+		if (groupSum(start + 1, nums, target)) {
+			return true;
 		}
 
 		return false;
