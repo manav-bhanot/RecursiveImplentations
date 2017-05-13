@@ -54,16 +54,25 @@ public class MergeSort {
 		int m = j - k;
 		
 		// Create a left temp array to store the elements
+		
+		//System.out.println("\nMerging the below two Arrays");
+		
+		//System.out.print("Left Array : ");
 		int left[] = new int[n];
 		for (int index = 0; index < n; index++) {
 			left[index] = arr[index + i];
+			//System.out.print(left[index] + " | ");
 		}
 		
+		//System.out.println();
+		
+		//System.out.print("Rigth Array : ");
 		// Create a right temp array to store the elements
 		int right[] = new int[m];
 		for (int index = 0; index < m; index++) {
 			right[index] = arr[index + (k + 1)];
-		}	
+			//System.out.print(right[index] + " | ");
+		}
 		
 		int p = 0, q = 0;
 		

@@ -41,8 +41,6 @@ public class SplitArray {
 			return false;
 
 		return isSplitPossible(0, nums, arraySum / 2);
-		
-		//return helper(0, nums, 0, 0);
 	}
 
 	public static int findArraySum(int start, int[] nums) {

@@ -67,15 +67,15 @@ public class Maze {
 			return false;
 
 		// Check if the current cell is the target. If yes then return t
-		if (matrix[i][j] == 'T' || matrix[i][j] == '.')
+		if (matrix[i][j] == 'T')
 			return true;
 
 		for (int[] dir : next) {
 			int x = dir[0];
 			int y = dir[1];
 
-			// Check if this particular direction is
-			if (!blocked(matrix, i + x, j + y) && isValid(matrix, i + x, j + y)) {
+			// Check if this particular direction is blocker
+			if (isValid(matrix, i + x, j + y) && !blocked(matrix, i + x, j + y)) {
 				matrix[i][j] = '#';
 				i = i + x;
 				y = y + j;
