@@ -43,7 +43,7 @@ public class MergeSort {
 			int mid = (begin + end) / 2;
 			
 			mergeSort(begin, mid, arr);
-			mergeSort(mid + 1, arr.length - 1, arr);
+			mergeSort(mid + 1, end, arr);
 			merge(begin, mid, end, arr);
 		}
 	}

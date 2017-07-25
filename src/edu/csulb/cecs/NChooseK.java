@@ -34,7 +34,6 @@ public class NChooseK {
 		if ( n == k || k == 0) {
 			return 1;
 		}
-		
 		return C(n-1, k) + C(n-1, k-1);
 	}
 
