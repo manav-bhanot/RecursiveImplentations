@@ -15,7 +15,7 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		int arr[] = new int[] {1,4,5,8,12,16,24,29,34,39,41,43,58,60,67,76,77,79,89,93};
 		
-		int key = 45;
+		int key = 12;
 		
 		System.out.println(bSearch(0, arr.length-1, arr, key));
 
@@ -25,7 +25,7 @@ public class BinarySearch {
 		
 		if (i > j) return -1;
 		
-		int mid = (int)Math.floor((i+j)/2);
+		int mid = (i+j)/2;
 		
 		if (arr[mid] == key) {
 			return mid;
@@ -35,5 +35,4 @@ public class BinarySearch {
 			return bSearch(mid + 1, j, arr, key);
 		}
 	}
-
 }
