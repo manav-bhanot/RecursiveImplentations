@@ -21,18 +21,18 @@ public class BinarySearch {
 
 	}
 	
-	static int bSearch(int i, int j, int[] arr, int key) {
-		
-		if (i > j) return -1;
-		
-		int mid = (i+j)/2;
-		
-		if (arr[mid] == key) {
-			return mid;
-		} else if (arr[mid] > key) { // key should be there in the left subarray
-			return bSearch(i, mid - 1, arr, key);
+	static int bSearch(int leftIdx, int rightIdx, int[] arr, int key) {
+
+		if (leftIdx > rightIdx) return -1;
+
+		int middleIdx = (leftIdx+rightIdx)/2;
+
+		if (arr[middleIdx] == key) {
+			return middleIdx;
+		} else if (arr[middleIdx] > key) { // key should be there in the left subarray
+			return bSearch(leftIdx, middleIdx - 1, arr, key);
 		} else { // search for the key in the right subarray
-			return bSearch(mid + 1, j, arr, key);
+			return bSearch(middleIdx + 1, rightIdx, arr, key);
 		}
 	}
 }
