@@ -16,7 +16,6 @@ public class BinarySearch {
 		int arr[] = new int[] {1,4,5,8,12,16,24,29,34,39,41,43,58,60,67,76,77,79,89,93};
 		
 		int key = 12;
-		
 		System.out.println(bSearch(0, arr.length-1, arr, key));
 
 	}
